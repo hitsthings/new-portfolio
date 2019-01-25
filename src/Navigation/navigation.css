@@ -1,0 +1,54 @@
+.nav-panel{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.button{
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 4%;
+    color: black;
+    cursor: pointer;
+    background-color: #35dbed;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 5px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500px;
+    font-size: 14px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button:hover, .button:focus{
+    background: white;
+    border: 2px solid #35dbed;
+}
+
+.nav-panel a{
+    text-decoration: none;
+}
+
+
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 100}
+}
+
+@media only screen and (min-width: 1000px){
+    .nav-panel{
+        width: 500px;
+    }
+
+    .button{
+        padding: 12px;
+        font-size: 18px;
+        width: 120px;
+    }
+}

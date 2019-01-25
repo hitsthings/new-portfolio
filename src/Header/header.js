@@ -20,7 +20,7 @@ export default class Header extends React.Component{
                 this.setState({opener: false});
             }
             .bind(this),
-            1700
+            1900
         );
         setTimeout(
             function() {
@@ -36,6 +36,13 @@ export default class Header extends React.Component{
             .bind(this),
             3000
         );
+        setTimeout(
+            function() {
+                this.setState({opener: null});
+            }
+            .bind(this),
+            2300
+        );
     }
 
     render(){
@@ -44,22 +51,26 @@ export default class Header extends React.Component{
         let navigationContent;
         if(this.state.opener === true){
             headerContent = <Opener />
-            navigationContent = null
-        }else {
+            //navigationContent = null
+        }else if(this.state.opener === false){
+            headerContent = null
+        }else if(this.state.opener === null){
             headerContent = <Intro />
-            navigationContent = <Navigation />
+            //navigationContent = <Navigation />
         }
         if(this.state.animation === true){
             animationContent = <Swoosh />
         }else {animationContent = null}
         return(
             <header>
-                <div className='content-wrapper'>
-                    {headerContent}
-                    {animationContent}
+                <div className='header-wrapper'>
+                    <div className='content-wrapper'>
+                        {headerContent}
+                        {animationContent}
+                    </div>
                 </div>
                 <div className='header-navigation'>
-                   {navigationContent}
+                   <Navigation />
                 </div>
             </header>
         )
@@ -69,7 +80,7 @@ export default class Header extends React.Component{
 const Opener = (props) => {
     return(
         <div className='header-content'>
-            <h1>Hello World</h1>
+            <h1>Hi, I'm Caren</h1>
         </div>
     )
 }

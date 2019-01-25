@@ -1,0 +1,12 @@
+.projects-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.project-card-wrapper{
+    width: 300px;
+    height: 400px;
+    background-color: #fddb00;
+}

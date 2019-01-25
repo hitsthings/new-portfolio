@@ -1,7 +1,13 @@
 import React from 'react';
+import './projects.css';
+import ProjectCard from './project-card';
 
 export default function Projects(props){
     return(
-        <div><h2>Projects</h2></div>
+        <div className='container projects-wrapper'>
+            <ProjectCard />
+            <ProjectCard />
+            <ProjectCard />
+        </div>
     )
 }
