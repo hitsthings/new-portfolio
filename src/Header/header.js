@@ -19,7 +19,7 @@ export default class Header extends React.Component{
                 this.setState({opener: false});
             }
             .bind(this),
-            1500
+            1700
         );
         setTimeout(
             function() {
@@ -53,7 +53,7 @@ export default class Header extends React.Component{
                     {animationContent}
                 </div>
                 <div className='header-buttons'>
-                    <button />
+                   <h2>Header buttons</h2>
                 </div>
             </header>
         )
@@ -77,7 +77,7 @@ const Swoosh = (props) => {
 const Intro = (props) => {
     return(
         <div className='header-content'>
-            <h2>From design to deployment</h2>
+            <h2>From design to development</h2>
             <h2>I make things happen</h2>
         </div>
     )
