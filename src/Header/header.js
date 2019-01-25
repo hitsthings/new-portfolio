@@ -1,4 +1,5 @@
 import React from 'react';
+import Navigation from '../Navigation/navigation';
 
 export default class Header extends React.Component{
     constructor(){
@@ -40,9 +41,14 @@ export default class Header extends React.Component{
     render(){
         let headerContent;
         let animationContent;
+        let navigationContent;
         if(this.state.opener === true){
             headerContent = <Opener />
-        }else {headerContent = <Intro />}
+            navigationContent = null
+        }else {
+            headerContent = <Intro />
+            navigationContent = <Navigation />
+        }
         if(this.state.animation === true){
             animationContent = <Swoosh />
         }else {animationContent = null}
@@ -52,8 +58,8 @@ export default class Header extends React.Component{
                     {headerContent}
                     {animationContent}
                 </div>
-                <div className='header-buttons'>
-                   <h2>Header buttons</h2>
+                <div className='header-navigation'>
+                   {navigationContent}
                 </div>
             </header>
         )
