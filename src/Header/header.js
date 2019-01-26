@@ -48,15 +48,12 @@ export default class Header extends React.Component{
     render(){
         let headerContent;
         let animationContent;
-        let navigationContent;
         if(this.state.opener === true){
             headerContent = <Opener />
-            //navigationContent = null
         }else if(this.state.opener === false){
             headerContent = null
         }else if(this.state.opener === null){
             headerContent = <Intro />
-            //navigationContent = <Navigation />
         }
         if(this.state.animation === true){
             animationContent = <Swoosh />

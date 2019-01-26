@@ -5,6 +5,8 @@ import About from '../About/about';
 import Projects from '../Projects/projects';
 import Experience from '../Experience/experience';
 import Contact from '../Contact/contact';
+import Background from './background';
+import './app.css';
 
 
 class App extends Component {
@@ -12,13 +14,16 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <Background />
           <Header />
-          <Switch>
-            <Route exact path='/about' component={About}/>
-            <Route exact path='/projects' component={Projects}/>
-            <Route exact path='/experience' component={Experience}/>
-            <Route exact path='/contact' component={Contact}/>
-          </Switch>
+          <main>
+            <Switch>
+              <Route exact path='/about' component={About}/>
+              <Route exact path='/projects' component={Projects}/>
+              <Route exact path='/experience' component={Experience}/>
+              <Route exact path='/contact' component={Contact}/>
+            </Switch>
+          </main>
         </div>
       </Router>
     );
