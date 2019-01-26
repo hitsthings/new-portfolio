@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class ProjectCard extends React.Component{
     render(){
-        console.log(this.props.image)
         return(
             <div className='project-card-container'>
                 <div className='project-card'>
