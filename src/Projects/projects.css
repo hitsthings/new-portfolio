@@ -9,4 +9,5 @@
     width: 300px;
     height: 400px;
     background-color: #fddb00;
+    z-index: 5;
 }

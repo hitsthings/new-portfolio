@@ -81,8 +81,9 @@ h2{
   z-index: 5;
 }
 
+
 .header-wrapper{
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,6 +108,10 @@ h2{
   flex-direction: column;
 }
 
+.header-content h2{
+  background-color: rgba(0,0,0,.5);
+}
+
 .header-navigation{
   justify-self: flex-end;
   z-index: 5;
@@ -129,6 +134,11 @@ h2{
 @keyframes swoosh{
   from{background-position: top;}
   to{background-position: bottom;}
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
 }
 
 @media only screen and (min-width: 1000px){

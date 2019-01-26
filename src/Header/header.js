@@ -67,7 +67,7 @@ export default class Header extends React.Component{
                     </div>
                 </div>
                 <div className='header-navigation'>
-                   <Navigation />
+                   <Navigation {...this.props}/>
                 </div>
             </header>
         )

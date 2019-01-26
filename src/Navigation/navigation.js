@@ -9,24 +9,28 @@ export default function Navigation(props){
                 <NavButton 
                     class='nav1'
                     label='About'
+                    onClick={props.setRed}
                 />
             </Link>
             <Link to='/projects'>
                 <NavButton 
                     class='nav2'
                     label='Projects'
+                    onClick={props.setGreen}
                 />
             </Link>
             <Link to='/experience'>
                 <NavButton 
                     class='nav3'
                     label='Experience'
+                    onClick={props.setYellow}
                 />
             </Link>
             <Link to='/contact'>
                 <NavButton 
                     class='nav4'
                     label='Contact'
+                    onClick={props.setBlue}
                 />
             </Link>
         </div>
@@ -36,7 +40,7 @@ export default function Navigation(props){
 const NavButton = (props) => {
     return(
         <div className={`nav-button ${props.class}`}>
-            <button type='button' className='button'>{props.label}</button>
+            <button type='button' className='button' onClick={props.onClick}>{props.label}</button>
         </div>
     )
 }
