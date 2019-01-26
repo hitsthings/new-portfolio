@@ -1,0 +1,13 @@
+.contact-wrapper{
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    width: 90%;
+    min-height: 300px;
+}
+
+@media only screen and (min-width: 900px){
+    .contact-wrapper{
+        width: 800px;
+    }
+}

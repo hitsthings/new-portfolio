@@ -21,8 +21,6 @@ export default class ExperienceCard extends React.Component{
         return(
             <div className='experience-card-container'>
                 <div className={`basic-card card-${this.props.className}`}
-                    onMouseEnter={this.toggleExpand}
-                    onMouseLeave={this.toggleExpand}
                 >
                     <div className='card-topper' />
                     {info}
