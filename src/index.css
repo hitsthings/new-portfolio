@@ -53,6 +53,15 @@ body{
      background-color: black;
 }
 
+button{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  overflow: hidden;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0);
+  border: none;
+}
+
 header{
   background-image: url('./assets/subdued-space.png');
   background-size: cover;
@@ -82,6 +91,24 @@ h2{
   font-size: 18px;
   text-align: center;
   z-index: 5;
+}
+
+h3{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.2em;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+a{
+  font-family: 'Roboto', sans-serif;
 }
 
 .header-wrapper{

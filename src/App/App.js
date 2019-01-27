@@ -5,7 +5,6 @@ import About from '../About/about';
 import Projects from '../Projects/projects';
 import Experience from '../Experience/experience';
 import Contact from '../Contact/contact';
-import Background from './background';
 import './app.css';
 
 

@@ -4,11 +4,12 @@
 
 .about-container{
     position: relative;
-    background-color: white;
+    background-image: linear-gradient(#b8b6cd, #8f86cf);
     width: 90%;
-    min-height: 300px;
     z-index: 5;
-    margin: 0 auto;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 @media only screen and (min-width: 900px){
