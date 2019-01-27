@@ -1,43 +1,36 @@
 import React from 'react';
 
 export default class ExperienceCard extends React.Component{
-    constructor(){
-        super()
-        this.state = {
-            expanded: false,
-        }
+
+    onMouseEnter = () => {
+        console.log('entered')
     }
 
-    toggleExpand = () => {
-        console.log('toggle');
-        this.setState({expanded: !this.state.expanded})
+    onMouseLeave = () => {
+        console.log('left')
     }
 
     render(){
-        let info;
-        if(this.state.expanded === true){
-            info = <ExpandedCard /> 
-        }else{ info = <ClosedCard />}
+        let expand;
+        if(this.props.expanded === true){
+            expand = <Expanded />
+        }
+
         return(
             <div className='experience-card-container'>
-                <div className={`basic-card card-${this.props.className}`}
-                >
-                    <div className='card-topper' />
-                    {info}
-                </div>
+                <div className='card-topper'></div>
+                <div className='card-intro'></div>
+                {expand}
             </div>
         )
     }
 }
 
-const ClosedCard = (props) => {
+const Expanded = () => {
     return(
-        <div className='card-closed'></div>
-    )
-}
-
-const ExpandedCard = (props) => {
-    return(
-        <div className='card-info'></div>
+        <div className='expanded-card'>
+            <div className='section2 card-section'></div>
+            <div className='section3 card-section'></div>
+        </div>
     )
 }
