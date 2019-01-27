@@ -20,14 +20,14 @@ export default class Header extends React.Component{
                 this.setState({opener: false});
             }
             .bind(this),
-            1900
+            1950
         );
         setTimeout(
             function() {
                 this.setState({animation: true});
             }
             .bind(this),
-            100
+            800
         );
         setTimeout(
             function() {
@@ -41,7 +41,7 @@ export default class Header extends React.Component{
                 this.setState({opener: null});
             }
             .bind(this),
-            2300
+            2000
         );
     }
 

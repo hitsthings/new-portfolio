@@ -10,43 +10,10 @@ import './app.css';
 
 
 class App extends Component {
-  constructor(){
-    super()
-    this.state = {
-      blue: false,
-      red: false,
-      green: false,
-      yellow: false,
-    }
-  }
-
-  setBlue = () => {
-    this.setState({blue: true})
-  }
-
-  setRed = () => {
-    this.setState({red: true})
-  }
-
-  setGreen = () => {
-    this.setState({green: true})
-
-  }
-
-  setYellow = () => {
-    this.setState({yellow: true})
-  }
-
   render() {
     return (
       <Router>
         <div className="App">
-          <Background 
-            blue={this.state.blue}
-            red={this.state.red}
-            yellow={this.state.yellow}
-            green={this.state.green}
-          />
           <Header 
             setBlue={this.setBlue}
             setRed={this.setRed}

@@ -54,12 +54,14 @@ body{
 }
 
 header{
+  background-image: url('./assets/subdued-space.png');
+  background-size: cover;
+  background-position: bottom;
   height: 60vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 5vh;
+  justify-content: flex-start;
   z-index: 5;
 }
 
@@ -81,9 +83,8 @@ h2{
   z-index: 5;
 }
 
-
 .header-wrapper{
-  height: 50vh;
+  height: 45vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,8 +110,9 @@ h2{
 }
 
 .header-content h2{
-  background-color: rgba(0,0,0,.5);
+  animation: fade-in 2s 1;
 }
+
 
 .header-navigation{
   justify-self: flex-end;
@@ -123,17 +125,22 @@ h2{
   left: 0;
   width: 300px;
   height: 169px;
-  background-image: url('./assets/swoosh.png');
+  background-image: url('./assets/sparkle.png');
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: 120%;
   z-index: 10;
-  animation: swoosh 3s steps(45) 1;
+  animation: swoosh 2s steps(45) 1;
 }
 
 @keyframes swoosh{
   from{background-position: top;}
   to{background-position: bottom;}
+}
+
+@keyframes fade-in{
+  from{opacity: 0%}
+  to{opacity: 100%}
 }
 
 .container{
@@ -142,6 +149,14 @@ h2{
 }
 
 @media only screen and (min-width: 1000px){
+
+  header{
+    height: 70vh;
+  }
+
+  .header-wrapper{
+    height: 48vh;
+  }
   .container{
     width: 960px;
     margin: 0 auto;

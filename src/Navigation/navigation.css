@@ -10,7 +10,7 @@
     border-radius: 4%;
     color: black;
     cursor: pointer;
-    background-color: #35dbed;
+    background-color: #fefc95;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -27,7 +27,7 @@
 
 .button:hover, .button:focus{
     background: white;
-    border: 2px solid #35dbed;
+    border: 2px solid #fefc95;
 }
 
 .nav-panel a{
@@ -39,6 +39,16 @@
 @keyframes appear {
     0% {opacity: 0;}
     100% {opacity: 100}
+}
+
+@media only screen and (min-width: 700px){
+    .nav-panel{
+        width: 400px;
+    }
+
+    .button{
+        width: 100px;
+    }
 }
 
 @media only screen and (min-width: 1000px){

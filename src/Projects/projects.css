@@ -32,13 +32,13 @@
 
 .project-card-front{
     background-color: white;
-    border: 5px solid #fddb00;
+    border: 5px solid #b2dce4;
     height: 100%;
     width: 100%;
 }
 
 .project-card-back{
-    background-color: #fddb00;
+    background-color: #b2dce4;
     transform: rotateY(180deg);
     height: 100%;
     width: 100%;
@@ -49,8 +49,13 @@
     width: 100%;
 }
 
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 700px){
     .projects-wrapper{
+        width: 650px;
         justify-content: space-between;
     }
+}
+
+@media only screen and (min-width: 1000px){
+
 }
