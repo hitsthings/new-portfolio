@@ -6,7 +6,7 @@ export default class Experience extends React.Component{
     constructor(){
         super()
         this.state = {
-            expanded1: false,
+            expanded1: true,
             expanded2: false,
             expanded3: false,
             expanded4: false,
@@ -80,7 +80,12 @@ export default class Experience extends React.Component{
 const Expanded = () => {
     return(
         <div className='expanded-card'>
-            <div className='section2 card-section'></div>
+            <div className='expanded-card-front card-section'>
+                <p>Top</p>
+            </div>
+            <div className='expanded-card-back card-section'>
+                <p>Bottom</p>
+            </div>
         </div>
     )
 }

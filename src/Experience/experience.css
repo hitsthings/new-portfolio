@@ -1,3 +1,11 @@
+
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 400px;
+}
+
 .outside-wrapper{
     position: relative;
 }
@@ -11,13 +19,6 @@
     margin: 20px;
 }
 
-.card-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 400px;
-}
-
 .card-topper{
     position: relative; 
     z-index: 5;
@@ -27,7 +28,7 @@
 }
 
 .card-intro{
-    position: relative;
+    position: absolute;
     z-index: 5;
     height: 240px;
     width: 100%;
@@ -35,18 +36,36 @@
 
 .expanded-card{
     position: absolute;
-    top: 320px;
-    left: 15px;
-    width: 400px;
-    background-image: linear-gradient(#e0d3d1, #fcfbfa);
-    z-index: 20;
-    transform: skew(-2deg);
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    top: 0;
+    height: 600px;
+    width: 403px;
+    margin: 20px;
+    z-index: 10;
+    perspective: 2000px;
+    perspective-origin: 0 50%;
+    transform-style: preserve-3d;
+    transform: rotateX(-160deg);
+    animation: unfold 1s;
+}
+
+@keyframes unfold {
+    from{transform: rotateX(-90deg)}
+    to{transform: rotateX(-160deg)}
 }
 
 .card-section{
+    position: absolute;
+    width: 100%;
     height: 300px;
-    border-top: solid 1px #e0d3d1;
+    backface-visibility: hidden;
+}
+
+.expanded-card-front{
+    background-color: #aa3281;
+}
+
+.expanded-card-back{
+    background-image: linear-gradient(#e0d3d1, #fcfbfa);
+    transform: rotateX(175deg);
+    box-shadow: 5px 5px 5px rgba(0,0,0,.4);
 }
