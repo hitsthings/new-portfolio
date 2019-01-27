@@ -45,6 +45,10 @@ export default class Header extends React.Component{
         );
     }
 
+    scrollDown = () => {
+        window.scrollTo(0,200, 'smooth');
+    }
+
     render(){
         let headerContent;
         let animationContent;
@@ -67,7 +71,7 @@ export default class Header extends React.Component{
                     </div>
                 </div>
                 <div className='header-navigation'>
-                   <Navigation {...this.props}/>
+                   <Navigation onClick={this.scrollDown} {...this.props}/>
                 </div>
             </header>
         )

@@ -23,7 +23,7 @@ export default function Navigation(props){
                 <NavButton 
                     class='nav3'
                     label='Experience'
-                    onClick={props.setYellow}
+                    onClick={props.onClick}
                 />
             </Link>
             <Link to='/contact'>
