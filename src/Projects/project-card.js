@@ -22,7 +22,7 @@ export default class ProjectCard extends React.Component{
                             <p>{this.props.text}</p>
                         </div>
                         <div className='project-stack'>
-                            <img src={this.props.stackURL} alt={`image for ${this.props.title} stack`}/>
+                            <img src={this.props.stackURL} alt={`${this.props.title} stack`}/>
                         </div>
                     </div>
                 </div>

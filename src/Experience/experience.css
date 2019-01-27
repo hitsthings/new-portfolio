@@ -1,7 +1,13 @@
+.outside-wrapper{
+    position: relative;
+}
+
 .experience-card-container{
+    position: relative;
     z-index: 5;
     width: 400px;
-    background-color: white;
+    height: 300px;
+    background-color: #f0e9e8;
     margin: 20px;
 }
 
@@ -9,21 +15,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 400px;
 }
 
 .card-topper{
+    position: relative; 
+    z-index: 5;
     height: 60px;
     width: 100%;
     background-color: #aa3281;
 }
 
 .card-intro{
-    height: 250px;
+    position: relative;
+    z-index: 5;
+    height: 240px;
     width: 100%;
+}
+
+.expanded-card{
+    position: absolute;
+    top: 320px;
+    left: 15px;
+    width: 400px;
+    background-image: linear-gradient(#e0d3d1, #fcfbfa);
+    z-index: 20;
+    transform: skew(-2deg);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.27);
 }
 
 .card-section{
     height: 300px;
-    width: 400px;
+    border-top: solid 1px #e0d3d1;
 }
