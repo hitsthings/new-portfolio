@@ -1,5 +1,4 @@
 import React from 'react';
-import video from '../assets/space.mp4';
 
 export default class Background extends React.Component{
     render(){

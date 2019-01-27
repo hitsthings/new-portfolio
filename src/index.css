@@ -63,6 +63,7 @@ header{
   flex-direction: column;
   justify-content: flex-start;
   z-index: 5;
+  margin-bottom: -2vh;
 }
 
 
