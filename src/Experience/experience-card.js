@@ -22,6 +22,8 @@ export default class ExperienceCard extends React.Component{
 
     render(){
         let expand = this.state.expanded? <Expanded {...this.props}/>: null;
+        let image = this.props.image? <img src={this.props.image} /> : null;
+
         return(
             <div className='outside-wrapper'
                     onMouseEnter={this.expandCard}
@@ -33,7 +35,8 @@ export default class ExperienceCard extends React.Component{
                         <img src={this.props.logo} alt={this.props.logoAlt} />
                     </div>
                     <div className='card-intro'>
-                        <img src={this.props.image} />
+                        {image}
+                        {this.props.topContent}
                         <div className='card-title'>
                             <h3>{this.props.title}</h3>
                         </div>

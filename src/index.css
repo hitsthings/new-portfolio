@@ -62,6 +62,19 @@ button{
   border: none;
 }
 
+a{
+  text-decoration: none;
+  color: #aa3281;
+}
+
+a:hover{
+  color: #6a862b;
+}
+
+a:visited{
+  color: #4d6c72;
+}
+
 header{
   background-image: url('./assets/subdued-space.png');
   background-size: cover;
