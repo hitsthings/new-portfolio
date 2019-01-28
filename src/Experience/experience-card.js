@@ -12,15 +12,32 @@ export default class ExperienceCard extends React.Component{
         this.setState({expanded: !this.state.expanded})
     }
 
+    expandCard = () => {
+        this.setState({expanded: true})
+    }
+
+    closeCard = () => {
+        this.setState({expanded: false})
+    }
+
     render(){
-        let expand = this.state.expanded? <Expanded />: null;
+        let expand = this.state.expanded? <Expanded {...this.props}/>: null;
         return(
             <div className='outside-wrapper'
-                    onMouseEnter={this.toggleState}
-                    onMouseLeave={this.toggleState}>
+                    onMouseEnter={this.expandCard}
+                    onMouseLeave={this.closeCard}
+                    onClick={this.toggleState}
+            >
                 <div className='experience-card-container'>
-                    <div className='card-topper'></div>
-                    <div className='card-intro'></div>
+                    <div className='card-topper'>
+                        <img src={this.props.logo} alt={this.props.logoAlt} />
+                    </div>
+                    <div className='card-intro'>
+                        <img src={this.props.image} />
+                        <div className='card-title'>
+                            <h3>{this.props.title}</h3>
+                        </div>
+                    </div>
                 </div>
                 {expand}
             </div>
@@ -29,16 +46,17 @@ export default class ExperienceCard extends React.Component{
 }
 
 
-const Expanded = () => {
+const Expanded = (props) => {
     return(
         <div className='expanded-card'>
             <div className='expanded-card-front card-section'>
-                <p>Top</p>
             </div>
             <div className='expanded-card-back card-section'>
-                <p>Bottom</p>
+                {props.content}
             </div>
         </div>
     )
 }
+
+
 

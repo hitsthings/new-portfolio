@@ -26,6 +26,15 @@ const data = [
 export default function Projects(props){
     return(
         <div className='container projects-wrapper'>
+        <ProjectCard
+                image={require('../assets/money-jars.png')} 
+                alt='screen shot of money jars app'
+                title={data[0].title}
+                live={data[0].live}
+                github={data[0].github}
+                text={data[0].text}
+                stackURL={require('../assets/money-stack.png')}
+            />
             <ProjectCard 
                 image={require('../assets/something-new.png')} 
                 alt='screen shot of something new app'
@@ -35,15 +44,7 @@ export default function Projects(props){
                 text={data[1].text}
                 stackURL={require('../assets/something-stack.png')}
             />            
-            <ProjectCard
-                image={require('../assets/money-jars.png')} 
-                alt='screen shot of money jars app'
-                title={data[0].title}
-                live={data[0].live}
-                github={data[0].github}
-                text={data[0].text}
-                stackURL={require('../assets/money-stack.png')}
-            />
+
 
             <ProjectCard 
                 image={require('../assets/family-reunion.png')} 

@@ -34,8 +34,10 @@
 
 .project-card-front{
     background-color: white;
-    border: 5px solid #b2dce4;
+    border: 5px solid #aa3281
 }
+
+
 
 .project-card-back{
     background-color: #b2dce4;
@@ -43,6 +45,7 @@
 }
 
 .project-title{
+    position: absolute;
     height: 60px;
     width: 100%;
     background-color: #aa3281;
@@ -52,6 +55,7 @@
 
 .project-links{
     height: 60px;
+    margin-top: 60px;
     width: 100%;
     padding-left: 20px;
     display: flex;

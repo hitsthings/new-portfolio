@@ -8,21 +8,21 @@
 
 .outside-wrapper{
     position: relative;
+    margin-bottom: 20px;
 }
 
 .experience-card-container{
     position: relative;
     z-index: 5;
-    width: 400px;
-    height: 300px;
+    width: 250px;
+    height: 200px;
     background-color: #f0e9e8;
-    margin: 20px;
 }
 
 .card-topper{
     position: relative; 
     z-index: 5;
-    height: 60px;
+    height: 40px;
     width: 100%;
     background-color: #aa3281;
 }
@@ -30,16 +30,15 @@
 .card-intro{
     position: absolute;
     z-index: 5;
-    height: 240px;
+    height: 160px;
     width: 100%;
 }
 
 .expanded-card{
     position: absolute;
-    top: 0;
-    height: 600px;
-    width: 403px;
-    margin: 20px;
+    top: 2px;
+    height: 400px;
+    width: 251px;
     z-index: 10;
     perspective: 2000px;
     perspective-origin: 0 50%;
@@ -49,23 +48,89 @@
 }
 
 @keyframes unfold {
-    from{transform: rotateX(-90deg)}
+    from{transform: rotateX(-70deg)}
     to{transform: rotateX(-160deg)}
 }
 
 .card-section{
     position: absolute;
     width: 100%;
-    height: 300px;
+    height: 200px;
     backface-visibility: hidden;
 }
 
 .expanded-card-front{
-    background-color: #aa3281;
+    background-color: #e0d3d1;
 }
 
 .expanded-card-back{
     background-image: linear-gradient(#e0d3d1, #fcfbfa);
     transform: rotateX(175deg);
     box-shadow: 5px 5px 5px rgba(0,0,0,.4);
+}
+
+.card-topper img{
+    height: 100%;
+}
+
+.card-intro img{
+    height: 100%;
+    width: 100%;
+}
+
+.card-title{
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0e9e8;
+    display: flex;
+    padding: 10px;
+}
+
+.card-title h3{
+    font-size: 16px;
+}
+
+.expanded-content{
+    padding: 20px;
+}
+
+.expanded-content p{
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 500px){
+    .experience-card-container{
+        width: 400px;
+        height: 300px;
+        background-color: #f0e9e8;
+        margin: 20px;
+    }
+
+    .card-topper{
+        height: 60px;
+    }
+
+    .card-intro{
+        height: 240px;
+    }
+    
+    .expanded-card{
+        height: 600px;
+        width: 403px;
+        margin: 20px;
+    }
+
+    .card-section{
+        height: 300px;
+    }
+
+    .card-title h3{
+        font-size: 24px;
+    }
+
+    .expanded-content p{
+        font-size: 18px;
+    }
 }
