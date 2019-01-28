@@ -12,7 +12,7 @@ export default function Navigation(props){
                     onClick={props.setRed}
                 />
             </Link>
-            <Link to='/projects'>
+            <Link to='/'>
                 <NavButton 
                     class='nav2'
                     label='Projects'

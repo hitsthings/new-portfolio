@@ -34,6 +34,7 @@ export default function Projects(props){
                 github={data[0].github}
                 text={data[0].text}
                 stackURL={require('../assets/money-stack.png')}
+                className='wiggle'
             />
             <ProjectCard 
                 image={require('../assets/something-new.png')} 
@@ -44,8 +45,6 @@ export default function Projects(props){
                 text={data[1].text}
                 stackURL={require('../assets/something-stack.png')}
             />            
-
-
             <ProjectCard 
                 image={require('../assets/family-reunion.png')} 
                 alt='screen shot of family reunion app'

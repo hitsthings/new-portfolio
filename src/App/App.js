@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import ReactGA from 'react-ga';
 import Header from '../Header/header';
 import About from '../About/about';
 import Projects from '../Projects/projects';
@@ -22,7 +23,7 @@ class App extends Component {
           <main>
             <Switch>
               <Route exact path='/about' component={About}/>
-              <Route exact path='/projects' component={Projects}/>
+              <Route exact path='/' component={Projects}/>
               <Route exact path='/experience' component={Experience}/>
               <Route exact path='/contact' component={Contact}/>
             </Switch>

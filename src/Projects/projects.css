@@ -21,6 +21,19 @@
     transform-style: preserve-3d;
 }
 
+.wiggle{
+    animation:wiggle 2s 3;
+}
+
+@keyframes wiggle{
+    0%{transform: rotateY(0deg)}
+    80%{transform: rotateY(8deg)}
+    85%{transform: rotateY(-8deg)}
+    90%{transform: rotateY(8deg)}
+    95%{transform: rotateY(-8deg)}
+    100%{transform: rotateY(0deg)}
+}
+
 .project-card-container:hover .project-card{
     transform: rotateY(180deg)
 }
@@ -36,8 +49,6 @@
     background-color: white;
     border: 5px solid #aa3281
 }
-
-
 
 .project-card-back{
     background-color: #b2dce4;
