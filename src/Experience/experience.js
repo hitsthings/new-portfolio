@@ -104,7 +104,7 @@ const Portfolio = () => {
                 </p>
             </div>
             <div className='card-links'>
-                <p><a href='' target='_blank'>WEBSITE</a></p>
+                <p><a href='https://carenelizabeth.github.io/my-portfolio/' target='_blank'>WEBSITE</a></p>
                 <p><a href='https://github.com/Carenelizabeth/my-portfolio' target='_blank'>RESPOSITORY</a></p>
             </div>
         </div>
