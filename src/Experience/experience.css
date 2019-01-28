@@ -111,7 +111,7 @@
 .plant-animation{
     position: absolute;
     bottom: -5px;
-    left: 150px;
+    left: 180px;
     height: 208px;
     width: 100px;
     background-image: url('../assets/plant-sprite.png');
