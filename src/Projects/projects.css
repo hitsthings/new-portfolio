@@ -27,6 +27,7 @@
 
 @keyframes wiggle{
     0%{transform: rotateY(0deg)}
+    75%{transform: rotateY(0deg)}
     80%{transform: rotateY(8deg)}
     85%{transform: rotateY(-8deg)}
     90%{transform: rotateY(8deg)}
