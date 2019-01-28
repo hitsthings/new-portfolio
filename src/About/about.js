@@ -5,7 +5,7 @@ export default function About(props){
     return(
         <div className='about-wrapper container'>
             <div className='about-container'>
-                <h3>Nice to meet you. I'm Caren.</h3>
+                <h3>Hi, I'm Caren.</h3>
                 <p>Once I was a photographer. 
                 </p>
                 <p>Before that, I was a microbiologist.

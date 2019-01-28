@@ -6,9 +6,6 @@ export default class ProjectCard extends React.Component{
             <div className='project-card-container'>
                 <div className='project-card'>
                     <div className='project-card-front'>
-                        <div className='project-title'>
-                            <h3>{this.props.title}</h3>
-                        </div>
                         <img src={this.props.image} alt={this.props.alt}/>
                     </div>
                     <div className='project-card-back'>
