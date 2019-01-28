@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/family-reunion.0d984245.png"
   },
   {
-    "revision": "203119cfd356a86b2b14",
-    "url": "/static/css/main.fdacdcc2.chunk.css"
+    "revision": "b79ad9590e31ab25dad9",
+    "url": "/static/css/main.d9b5b3b0.chunk.css"
   },
   {
     "revision": "bff284ecf98f99f64754",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/static/media/something-new.a4d06dac.png"
   },
   {
-    "revision": "203119cfd356a86b2b14",
-    "url": "/static/js/main.203119cf.chunk.js"
+    "revision": "b79ad9590e31ab25dad9",
+    "url": "/static/js/main.b79ad959.chunk.js"
   },
   {
     "revision": "aa54e52983424ac34338c7a857bf9904",
@@ -64,7 +64,7 @@ self.__precacheManifest = [
     "url": "/static/media/artstuff.9408ad50.png"
   },
   {
-    "revision": "a112d434ebe4a9b586c1978889ee2b40",
+    "revision": "2fbc1820f2bd6b41436a95847dcba56b",
     "url": "/index.html"
   }
 ];
