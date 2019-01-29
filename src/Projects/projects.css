@@ -22,7 +22,7 @@
 }
 
 .wiggle{
-    animation:wiggle 2s 3;
+    animation:wiggle 2s 2;
 }
 
 @keyframes wiggle{
