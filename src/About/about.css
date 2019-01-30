@@ -1,0 +1,20 @@
+.about-wrapper{
+    height: 300px;
+}
+
+.about-container{
+    position: relative;
+    background-image: linear-gradient(#eed6e6, #ddadcd);
+    width: 90%;
+    z-index: 5;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 900px){
+    .about-container{
+        width: 800px;
+        margin-top: 20px;
+    }
+}
